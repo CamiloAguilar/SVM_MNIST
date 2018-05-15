@@ -12818,6 +12818,7 @@ AABJRU5ErkJggg=="
 <div class=" highlight hl-r"><pre><span></span><span class="c1">## Centrado de los datos</span>
 mean_train <span class="o">&lt;-</span> <span class="kp">colMeans</span><span class="p">(</span>train<span class="p">)</span>
 train <span class="o">&lt;-</span> train <span class="o">-</span> mean_train
+test <span class="o">&lt;-</span> test <span class="o">-</span> mean_train
 
 <span class="c1">## Componentes principales</span>
 pc <span class="o">&lt;-</span> prcomp<span class="p">(</span>train<span class="p">)</span> 
